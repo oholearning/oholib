@@ -12,15 +12,29 @@ class Content(TimeStampModel):
     title = models.CharField(max_length=255)
     description = models.TextField() 
     thumbnail = models.ImageField()
+    category = models.ManyToManyField('Category')
     
     def __str__(self):
-        return self.title 
+        return self.title
+
+    class Meta:
+        pass 
 
 
 class Resource(TimeStampModel):
     resource_name = models.CharField(max_length=255)
-    resource_type = models.ForeignKey("ContentType", on_delete=models.CASCADE)
-    resource = models.FileType(upload_to="uploads/resource")
+    content = models.ForeignKey("Content", on_delete=models.CASCADE)
+    resource = models.FileField(upload_to="uploads/resource")
     
     def __str__(self):
-        return self.content_name
+        return self.resource_name
+
+    
+
+
+
+class Category(TimeStampModel):
+    category_name = models.CharField(max_length=255)
+
+    def __str__(self):
+        return self.category_name

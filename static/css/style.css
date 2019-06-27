@@ -15,12 +15,49 @@
    
 }
 
-#navbar nav a:hover {
-   color: #666666;
+
+.navli {
+    max-width: 300px;
+    min-width: 180px;
+    min-height: 40px;
+    text-align: center;
+    line-height: 1rem;
 }
 
-/* Jumbotron styling */
+.menu-box {
+ 
+    padding: 20px;
+    max-width: 90%;
+    background:rgba(255,0,0,0.8);
+    color: #FFF;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    margin-top:-30px;
+    transform: scale(1.2);
 
+}
+
+.menu-box:hover{
+    transform: scale(1.25);
+  
+}
+
+
+.menu-box h4 {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    line-height: 34px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.menu-box h4 a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+
+/* Jumbotron styling */
 .jumbotron {
     background-color: #feffee;
     font-weight: 300;
@@ -118,4 +155,39 @@
    background: orange;
    content: "";
    margin-top:5px;
+}
+
+
+.notice-board {
+    background: #feffee;
+    border:  1px dotted rgba(255,0,0,0.8);
+    border-radius: 5px;
+    color: teal;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: -32px;
+    margin-left: 40px;
+}
+
+
+
+.notice-board h4:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.school-information {
+    min-height: 60px;
+    padding: 20px;
+    background: rgba(255,0,0,0.8);
+    margin-bottom: 40px;
+    transform: scale(1.04);
+    margin-top:20px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    text-align: left;
+    color: #FAFAFA;
+    
 }
