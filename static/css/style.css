@@ -15,6 +15,10 @@
    
 }
 
+#search {
+    background:#ffa502;
+}
+
 
 .navli {
     max-width: 300px;
@@ -30,7 +34,7 @@
 
 .menu-box {
     max-width: 90%;
-    background:rgba(255,0,0,0.8);
+    background:#ffa502;
     color: #FFF;
     margin-bottom: 50px;
     border-radius: 5px;
@@ -61,7 +65,7 @@
 
 /* Jumbotron styling */
 .jumbotron {
-    background-color: #feffee;
+    background-color: #ffa502;
     font-weight: 300;
     padding:0px;
     margin-bottom:0px;
@@ -125,15 +129,6 @@
     font-weight: 400;
 }
 
-#searchbox {
-    min-height: 60px;
-    text-align: center;
-    text-transform: uppercase;
-    border: 3px solid rgba(255,0,0,0.8); 
-    background: rgba(255,0,0,0.2);
-    
-
-}
 
 .heading {
     text-transform: capitalize;
@@ -158,7 +153,7 @@
   
     height:110px;
     padding: 30px;
-    border: 2px solid rgba(255,0,0,0.2);
+    border: 2px solid #ffa502;
     border-radius: 5px;
     color: teal;
     
@@ -170,9 +165,7 @@
 }
 
 
-
 .notice-board h4:hover {
-
     cursor: pointer;
 }
 
