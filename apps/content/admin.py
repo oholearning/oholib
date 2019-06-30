@@ -9,7 +9,7 @@ from .models import (
 class AudioFileUploadInline(admin.StackedInline):
     model = Resource
     extra = 1
-    fields = ["resource_name","resource"]
+    fields = ["resource_name","resource", 'resource_type']
 
 
 

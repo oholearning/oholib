@@ -1,3 +1,5 @@
 from django.shortcuts import render
 
-# Create your views here.
+
+def content_detail(self, id):
+    return "The detail page with id {}".format(id)

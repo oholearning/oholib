@@ -1,4 +1,5 @@
 from django.db import models
+from django.urls import reverse
 
 class TimeStampModel(models.Model):
     created_date = models.DateTimeField(auto_now=True)
@@ -21,10 +22,15 @@ class Content(TimeStampModel):
         pass 
 
 
+
 class Resource(TimeStampModel):
     resource_name = models.CharField(max_length=255)
     content = models.ForeignKey("Content", on_delete=models.CASCADE)
     resource = models.FileField(upload_to="uploads/resource")
+    resource_type = models.CharField(choices=(
+        ('PDF', 'PDF'),
+        ("EPUB", "EPUB"),
+    ), max_length=25)
     
     def __str__(self):
         return self.resource_name

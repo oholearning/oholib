@@ -5,10 +5,19 @@
 
 
 
-<hr style="width:2px background:#AFAFAF;">
-
-
-
+      <!-- Search results-->
+      <div class="container">
+        <div class="row">
+            {% for content in contents %}
+                <div class="col-md-3 col-sm-12">
+                    <div class="book-cover">
+                    <img src="{{content.thumbnail.url}}" width="200" height="300" alt="{{content.title}}">
+                    <h3><a href="{{content.get_absolute_url}}">{{content.title}}</a></h3>
+                    </div>
+                </div>
+          {% endfor %}
+        </div>
+      </div>
 
 
 {% endblock content %}

@@ -130,7 +130,7 @@
     text-align: center;
     text-transform: uppercase;
     border: 3px solid rgba(255,0,0,0.8); 
-    background: floralwhite;
+    background: rgba(255,0,0,0.2);
     
 
 }
@@ -180,6 +180,7 @@
     max-width: 280px;
     overflow: hidden;
     margin-bottom: 10px;
+    border: 1px solid grey !important;
 }
 
 .book-cover img {
