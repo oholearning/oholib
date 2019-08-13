@@ -5,9 +5,8 @@ from apps.content.models import (
 )
 
 def homepage(request):
-    contents = Content.objects.all()[:4]
-
     """Serve Homepage""" 
+    contents = {}
     return render (request, "home.html", {
         'contents': contents
 
